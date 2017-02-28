@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--><head>
+		<meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge; IE10; IE=9; IE=8; IE=7">
+
+		<meta content="en-EN" http-equiv="Content-Language"/>
+		<base href="http://int.natuzzi.com/" />
+
+		<script type="text/javascript">
+			var site_url = 'http://int.natuzzi.com/en-EN';
+			var lang = 'en-EN';
+		</script>
+
+		<meta name="format-detection" content="telephone=no" />
+
+      <meta name="viewport" content="width=1024">
+
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+      <link rel="stylesheet" href="css/normalize.min.css">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/main.css">
+
+
+        <link rel="stylesheet" href="css/style.css">
+
+        
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+		<script src="js/vendor/jquery-1.10.2.min.js"></script>
+      <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+      <script src="js/vendor/jquery-migrate.js"></script>
+		<script src="js/vendor/json2.js"></script>
+
+		<link rel="stylesheet" href="js/vendor/colorbox/colorbox.css">
+		<script src="js/vendor/colorbox/jquery.colorbox.js"></script>
+
+		<script type="text/javascript" src="js/vendor/jquery.customSelect.min.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery.cycle.all.js"></script>
+
+		<script type="text/javascript" src="js/vendor/tweenmax/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/vendor/tweenmax/TimelineMax.min.js"></script>
+
+        <script type="text/javascript" src="js/vendor/jquery.placeholder.js"></script>
+
+        <script type="text/javascript" src="js/vendor/jquery.cycle2.min.js"></script>
+
+        <script type="text/javascript" src="js/vendor/jquery.flip.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery.vide.min.js"></script>
+
+		<script src="js/utils.js"></script>
+		<script src="js/do.js"></script>
+
+		<meta property="og:title" content="" />
+		<meta property="og:description" content="" />
+		<meta property="og:url" content="http://int.natuzzi.com/cms/images/ajax-loader.gif" />
+		<meta property="og:image" content="http://int.natuzzi.com/images/logo.png" />
+
+		
+			<title></title>
+			<meta name="description" content="" />
+
+			<!-- ANALYTICS -->
+			  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16989191-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+		
+
+		
+
+      <script type="text/javascript">
+
+      	var json_lab;
+      	$(document).ready(function ()
+      	{
+      		$.getJSON("languages/en-EN.json", function (data)
+   			{
+   				json_lab = clone(data);
+   				$('body').trigger("LANG_LOADED");
+   				_init();
+   			});
+        });
+
+      </script>
+
+	</head>
+   <body>
+		
+
+
+<div class="top">
+    <div class="menu_top clearfix">
+        <div class="L">
+            
+
+            
+                
+            
+        </div>
+        <div class="R">
+            <a href="en-EN/customercare.html" style="padding-right: 15px;">Customer care</a>&nbsp;|&nbsp;
+            <a href="en-EN/select-country.html">Change Country <img src="img/b/arrow_dn_white.png" /></a>
+            
+            <a href="javascript:;" class="search_btn"><span class="search_word">Search</span> <img src="img/b/search_black.png" /></a>
+                <form class="form_search" action="en-EN/search.html" method="post" style="float:right;">
+                    <input type="text" id="input_search" name="input_search" autocomplete="off" />
+                    <div class="result_search">
+                        <div class="search_with_img">
+                            <ul><!-- load via ajax --></ul>
+                        </div>
+                    </div>
+                </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.search_btn').on({
+                click: function () {
+                    $('.search_word').hide();
+                    $('#input_search').fadeIn();
+                }
+            });
+
+            $('#input_search').on({
+                blur: function () {
+                    if (!$(this).val()) {
+                        $('.search_word').show();
+                        $('#input_search').fadeOut();
+                    }
+                }
+            });
+        });
+
+    </script>
+
+    
+
+
+    
+
+
+    <div class="main_menu">
+
+        
+            <a href="http://int.natuzzi.com"><img src="img/logo.png" /></a>
+        
+
+        <ul>
+
+			<li><a href="javascript:;" onclick="openMenu('sub1');" id="mm_highlights">News&Media</a></li>
+
+
+            
+
+            
+                <li><a href="en-EN/open-art.html" id="mm_openart">Open Art</a></li>
+            
+
+            <li><a href="en-EN/collections.html" id="mm_prods">Collections</a></li>
+
+            <li><a href="en-EN/dealer-locator.html" id="mm_stores">Dealer Locator</a></li>
+            
+
+            
+                <li><a href="javascript:;" id="mm_services" onclick="openMenu('sub4');">Services</a></li>
+            
+            
+                <li><a href="javascript:;" onclick="openMenu('sub5');" id="mm_experience">Our Company</a></li>
+            
+            <li class="last"><a href="en-EN/contact-us.html" id="mm_contacts">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="submenu clearfix">
+
+    <div class="sub sub1 txtC">
+        <div class="item50"><a href="en-EN/news.html"><img src="img/menu_news.jpg" alt="" width="100%" class="foto" /><br />News&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        <div class="item50"><a href="en-EN/media-videos.html"><img src="img/menu_media.jpg" alt="" width="100%" class="foto" /><br />Videos, ADV Campaigns, Catalogues&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+    </div>
+
+
+    <style>
+        .sub2 .d960 {
+            width: 550px;
+        }
+        .sub2 ul li {
+            background: none !important;
+            padding: 0 0 5px 0px !important;
+        }
+    </style>
+
+    
+
+
+    
+        <div class="sub sub4">
+        
+            <div class="item"><a href="https://www.tilelook.com/producers/ydbn/" target="_blank"><img src="cms/uploads/modified/bigs/ydbn-340x320-2.jpg" alt="cms/uploads/modified/bigs/ydbn-340x320-2.jpg" width="100%" class="foto" /><br />Your Design by Natuzzi&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/wedding-list-677.html" target="_self"><img src="cms/uploads/modified/bigs/wedding-list-340x320.jpg" alt="cms/uploads/modified/bigs/wedding-list-340x320.jpg" width="100%" class="foto" /><br />Wedding list&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/bespoke-payment-678.html" target="_self"><img src="cms/uploads/modified/bigs/bespoke-payment-340x320.jpg" alt="cms/uploads/modified/bigs/bespoke-payment-340x320.jpg" width="100%" class="foto" /><br />Bespoke payment&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/pick-up-and-delivery-679.html" target="_self"><img src="cms/uploads/modified/bigs/pick-up-340x320.jpg" alt="cms/uploads/modified/bigs/pick-up-340x320.jpg" width="100%" class="foto" /><br />Pick-up and delivery&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/the-natuzzi-warranty-680.html" target="_self"><img src="cms/uploads/modified/bigs/natuzzi-warranty-340x320.jpg" alt="cms/uploads/modified/bigs/natuzzi-warranty-340x320.jpg" width="100%" class="foto" /><br />The Natuzzi Warranty&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/care-and-maintenance-823.html" target="_self"><img src="cms/uploads/modified/bigs/natuzzi-cleaning-kit-4-823-447x320.jpg" alt="cms/uploads/modified/bigs/natuzzi-cleaning-kit-4-823-447x320.jpg" width="100%" class="foto" /><br />Care and Maintenance&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/customized-service-682.html" target="_self"><img src="cms/uploads/modified/bigs/services-img-5943-340x320-4.jpg" alt="cms/uploads/modified/bigs/services-img-5943-340x320-4.jpg" width="100%" class="foto" /><br />Customized service&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/extra-protection-683.html" target="_self"><img src="cms/uploads/modified/bigs/extra-protection-340x320-13.jpg" alt="cms/uploads/modified/bigs/extra-protection-340x320-13.jpg" width="100%" class="foto" /><br />Extra protection&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+        </div>
+    
+
+    
+    <div class="sub sub5">
+        
+            <div class="item"><a href="en-EN/page/pasquale-natuzzi-653.html" target="_self"><img src="cms/uploads/modified/bigs/pasquale-natuzzi-3-bn-340x320-2.jpg" alt="cms/uploads/modified/bigs/pasquale-natuzzi-3-bn-340x320-2.jpg" width="100%" class="foto" /><br />Pasquale Natuzzi&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/the-group-660.html" target="_self"><img src="cms/uploads/modified/bigs/schermata-2015-07-28-alle-13-01-27-340x320.png" alt="cms/uploads/modified/bigs/schermata-2015-07-28-alle-13-01-27-340x320.png" width="100%" class="foto" /><br />The Group&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="http://int.natuzzi.com/en-EN/dna" target="_self"><img src="cms/uploads/modified/bigs/natuzzi-dna-340x320.jpg" alt="cms/uploads/modified/bigs/natuzzi-dna-340x320.jpg" width="100%" class="foto" /><br />Natuzzi DNA&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/natuzzi-partnership-program-924.html" target="_self"><img src="cms/uploads/modified/bigs/home-340x320-4.jpg" alt="cms/uploads/modified/bigs/home-340x320-4.jpg" width="100%" class="foto" /><br />Natuzzi Partnership Program&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/coverings-and-quality-667.html" target="_self"><img src="cms/uploads/modified/bigs/sofa-coverings-leather-2-340x320.jpg" alt="cms/uploads/modified/bigs/sofa-coverings-leather-2-340x320.jpg" width="100%" class="foto" /><br />Coverings and Quality&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+        </div>
+    
+
+    <a href="javascript:;" class="m_close" onclick="closeMenu()"><img src="img/b/close_menu.png" /></a>
+</div>
+
+
+</div>
+
+<div class="total_black"></div>
+<div class="clear"></div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('.main_menu a').on("click", function () {
+            $('.main_menu a').css("text-decoration", "none");
+            $(this).css("text-decoration", "underline");
+        });
+
+        $('.block_box .item a').on('mouseenter', function () {
+            TweenLite.to($(this).find('img'), 0.4, {opacity: 0.6});
+        }).on('mouseout', function () {
+            TweenLite.to($(this).find('img'), 0.4, {opacity: 1});
+        });
+
+    });
+
+    var menu_open = false;
+    var sub_menu_open = false;
+    function openMenu (item) {
+        // controlla se è gia aperto il menu
+        if (!menu_open) {
+            TweenMax.set($('.total_black,.submenu,.' + item), {display:'block'});
+            TweenMax.to($('.total_black'), 0.3, {opacity: 1});
+            TweenMax.to($('.submenu'), 1, {opacity: 1, delay: 0.3, ease:Expo.easeOut});
+
+            // sub menu
+            TweenMax.to($("." + item), 0.3, {opacity: 1, delay: 0.9});
+
+            sub_menu_open = item;
+        }
+        else if (sub_menu_open != item) {
+            TweenMax.to($("." + sub_menu_open), 0.3, {opacity: 0, onComplete: function () {
+                TweenMax.set($("." + sub_menu_open), {display:"none"});
+                    TweenMax.set($("." + item), {display:"block", opacity: 0});
+                    TweenMax.to($("." + item), 0.3, {opacity: 1});
+                    sub_menu_open = item;
+                }
+            });
+        } else {
+            closeMenu();
+        }
+
+        menu_open = true;
+
+       $(".total_black").on("mouseenter", closeMenu);
+    }
+
+    function closeMenu () {
+       TweenMax.to($('.sub'), 0.3, {opacity: 0});
+       TweenMax.to($('.submenu'), 1, {opacity:0, delay: 0.4, ease:Expo.easeOut});
+       TweenMax.to($('.total_black'), 0.4, {opacity: 0, delay: 0.4, onComplete: function()
+       {
+          TweenMax.set($('.total_black,.submenu, .sub'), {display:'none'});
+          menu_open = false;
+          sub_menu_open = false;
+       }});
+       $('.main_menu a').css("text-decoration", "none");
+    }
+
+
+    function openMenuLangs () {
+        TweenMax.set($('.menu_langs'), {display: 'block'});
+        TweenMax.to($('.menu_langs'), 1, {opacity: 1, delay: 0.3, ease:Expo.easeOut});
+
+        $(".menu_langs").on("mouseenter", function () {
+            $(".menu_langs").on("mouseleave", closeMenuLangs);
+        });
+    }
+
+    function closeMenuLangs () {
+        TweenMax.to($('.menu_langs'), 0.5, {opacity:0, ease:Expo.easeOut, onComplete: function () {
+            TweenMax.set($('.menu_langs'), {display: 'none'});
+        }});
+    }
+
+    function openMenuContacts () {
+
+        var pos = $(".open_menu_contact").position();
+        $('.menu_contacts').css("left", pos.left);
+
+        TweenMax.set($('.menu_contacts'), {display: 'block'});
+        TweenMax.to($('.menu_contacts'), 1, {opacity: 1, delay: 0.3, ease:Expo.easeOut});
+
+        $(".menu_contacts").on("mouseenter", function () {
+            $(".menu_contacts").on("mouseleave", closeMenuContacts);
+        });
+    }
+
+    function closeMenuContacts () {
+        TweenMax.to($('.menu_contacts'), 0.5, {opacity:0, ease:Expo.easeOut, onComplete: function () {
+            TweenMax.set($('.menu_contacts'), {display: 'none'});
+        }});
+    }
+
+</script>
+
+		<div class="page_wrap">
+			<div class="d960">
+				<div class="testo_base txtC">
+					<br />
+					The page you were looking for does not exist or has been removed!
+					<br clear="all" />
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+	<div class="d960 clearfix">
+		<div class="col_footer">
+			COMPANY
+			<br /><br />
+			<a href="en-EN/page/the-group-660.html">The Group</a><br /><br /><a href="en-EN/page/f-a-q-174.html">F.A.Q.</a><br /><a href="http://natuzzipressroom.com/?L=en" target="_blank">Press room</a><br /><a style="text-transform: none; text-indent: 0px; letter-spacing: normal; font: 10px Verdana, Arial, Helvetica, sans-serif; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px;" href="http://www.natuzzi.com/en-EN/page/investor-relations-7.html" target="_blank">Investor Relations</a><br /><br /><a href="en-EN/page/privacy-policy-176.html">Privacy policy</a> <br /><a href="en-EN/page/copyright-178.html">Copyright</a> <br /><br /><a href="http://www.natuzzi.com/en-EN/npp/" target="_blank">Natuzzi Partnership Program</a><br /><br /><a href="http://reservedarea.natuzzi.com/login" target="_blank">Reserved Area</a>
+		</div>
+		<div class="col_footer">
+			STAY IN CONTACT WITH US
+			<br /><br />
+			<a href="en-EN/page/newsletter-495.html">Newsletter</a><br /><br /><a href="https://www.facebook.com/Natuzzi" target="_blank">Facebook</a> <br /><a href="https://twitter.com/natuzzi" target="_blank">Twitter</a> <br /><a href="https://instagram.com/natuzzi">Instagram</a> <br /><a href="http://www.youtube.com/Natuzzi" target="_blank">Youtube</a> <br /> <a href="https://www.linkedin.com/company/natuzzi?trk=top_nav_home" target="_blank">LinkedIn</a> <br /> <a href="http://blog.natuzzi.com" target="_blank">Blog</a> <br /> <br /> <a href="en-EN/contact-us.html">Contact Us<br /></a><a href="en-EN/dealer-locator.html">Dealer Locator</a>
+		</div>
+		<div class="col_footer">
+			DOWNLOADS
+			<br /><br />
+			<a class="iframe_cat cboxElement" onclick="trackEvent('downloads', 'online catalog', 'online catalog');" href="http://www.mokazine.com/read/natuzzi/natuzzi-italia-catalogue" target="_blank">Online catalogue</a><br /><br /><a href="https://3dwarehouse.sketchup.com/user.html?useCustomWarehouseUrl=natuzzi" target="_blank">3Ds for Professionals</a><br /><br />PRODUCT &amp; WARRANTY<br /><br /><a href="en-EN/page/the-natuzzi-warranty-680.html">The Natuzzi Warranty<br /></a><a href="en-EN/page/care-and-maintenance-823.html">Care and Maintenance</a><br /><br />
+		</div>
+		<div class="col_footer">
+			HIGHLIGHTS
+			<br /><br />
+			<a href="en-EN/news.html">Latest news</a><br /><br /><br /><br /><br /><br /><br /><br /><a href="http://www.natuzzi.com" target="_blank"><img style="margin-bottom: 5px;" src="http://www.natuzzi.com/img/logo.png" alt="Natuzzi Group" width="85" height="15" /><br />GLOBAL WEB SITE</a>
+		</div>
+	</div>
+
+	
+		<div class="d960 clearfix">
+			<div class="main_cont">
+				<span>Natuzzi S.p.A. | Registered office Via Iazzitiello, 47 - 70029 Santeramo in Colle (Ba) | Tax Code and VAT and Companies Registration Office of Bari 03513760722</span><br /><span>Fully paid up capital € 54.853.045,00 | Company Subject to the direction and coordination of Invest 2003 Srl</span>
+			</div>
+		</div>
+	
+</div>
+
+
+<div class="wasa_cookies">This website uses third-party technical cookies, managed by the websites of other organisations and remarketing sites, to send you advertising in line with your preferences. <br />If you access any element underneath this banner, you are agreeing to use of cookies. <br />To disable the use of cookies, go to the “Total or partial disabling of cookies” paragraph of our privacy policy at the following link <button onclick="setCookiePolicy()">Accept</button> <a href="en-EN/page/privacy-policy-176.html">Privacy Policy</a></div>
+
+<script type="text/javascript">
+    getCookiePolicy();
+</script>
+
+   </body>
+</html>

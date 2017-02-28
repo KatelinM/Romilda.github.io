@@ -1,0 +1,1373 @@
+    <!DOCTYPE html>
+ <html class="no-js"> 
+	 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+		<meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge; IE10; IE=9; IE=8; IE=7">
+
+		<meta content="en-EN" http-equiv="Content-Language"/>
+		<base  />
+
+		<script type="text/javascript">
+			var site_url = 'en-EN.html';
+			var lang = 'en-EN';
+		</script>
+
+		<meta name="format-detection" content="telephone=no" />
+
+      <meta name="viewport" content="width=1024">
+
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+      <link rel="stylesheet" href="css/normalize.min.css">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/main.css">
+
+
+        <link rel="stylesheet" href="css/style.css">
+
+        
+
+        <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+		<script src="js/vendor/jquery-1.10.2.min.js"></script>
+      <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+      <script src="js/vendor/jquery-migrate.js"></script>
+		<script src="js/vendor/json2.js"></script>
+
+		<link rel="stylesheet" href="js/vendor/colorbox/colorbox.css">
+		<script src="js/vendor/colorbox/jquery.colorbox.js"></script>
+
+		<script type="text/javascript" src="js/vendor/jquery.customSelect.min.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery.cycle.all.js"></script>
+
+		<script type="text/javascript" src="js/vendor/tweenmax/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/vendor/tweenmax/TimelineMax.min.js"></script>
+
+        <script type="text/javascript" src="js/vendor/jquery.placeholder.js"></script>
+
+        <script type="text/javascript" src="js/vendor/jquery.cycle2.min.js"></script>
+
+        <script type="text/javascript" src="js/vendor/jquery.flip.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery.vide.min.js"></script>
+
+		<script src="js/utils.js"></script>
+		<script src="js/do.js"></script>
+
+		<meta property="og:title" content="Home page | Romilda" />
+		<meta property="og:description" content="" />
+		<meta property="og:url" content="http://int.Romilda.com/" />
+		<meta property="og:image" content="http://int.Romilda.com/images/logo.png" />
+
+		
+			<title>Home page | Romilda</title>
+			<meta name="description" content="" />
+
+			<!-- ANALYTICS -->
+			  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16989191-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+		
+
+		
+
+      <script type="text/javascript">
+
+      	var json_lab;
+      	$(document).ready(function ()
+      	{
+      		$.getJSON("languages/en-EN.json", function (data)
+   			{
+   				json_lab = clone(data);
+   				$('body').trigger("LANG_LOADED");
+   				_init();
+   			});
+        });
+
+      </script>
+
+
+    <style>
+    
+        .bg_slide {height: 600px;}
+        .bg_slide {overflow: hidden;}
+
+    </style>
+
+    </head>
+   <body>
+
+ <a href="javascript:;" class="arrow-scroll" ><img src="img/arrow-scroll.png" /></a>
+
+        <!-- promo div -->
+        <div class="home_promo">
+            <div class="content">
+
+                <div class="box_container clearfix">
+                    <div class="box" onClick="closePromoHome();">
+                        <a href="javascript:;" onClick="closePromoHome();">
+                            <img src="img/promo_home1.jpg" width="100%" />
+                            <img src="img/Romilda-italia.png" class="loghetti" />
+                        </a>
+                        <p class="block_show"><a href="javascript:;" class="p_height" onClick="closePromoHome();">Sofas and armchairs are enriched by a selection of home furnishings, lighting and accessories designed to bring happiness through beauty and relaxation. Romilda Italia launches its first collection of beds and bedroom furniture.</a><a href="javascript:;" onClick="closePromoHome();" class="link">DISCOVER Romilda ITALIA</a></p>
+                    </div>
+                    <div class="box">
+                        <a href="http://www.Romildaeditions.com/" target="_blank">
+                            <img src="img/promo_home3.jpg" width="100%" />
+                            <img src="img/Romilda-editions.png" class="loghetti" />
+                        </a>
+                            <p class="block_show"><a href="http://www.Romildaeditions.com/" class="p_height" target="_blank">Romilda Editions offers a wide range of upholstered furniture in many styles, colors and configurations, with particular attention to comfort, quality and best value for money.</a><a href="http://www.Romildaeditions.com/" class="link">DISCOVER Romilda EDITIONS</a></p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="javascript:;" class="close_promo">Continue Browsing <img src="img/close_promo.png" /></a>
+
+        </div>
+        <!-- start content -->
+
+<style type="text/css">
+    .p_height {display: block;}
+</style>
+
+        <script type="text/javascript">
+
+            var h;
+            var open = 0;
+            var auto_open = 0;
+            $(".block_show").css("opacity", 0);
+            $(window).load(function () {
+                $('.close_promo').on('click', function () {
+                    writeCookie("nat_promo_home_count", 5, 6000);
+                    closePromoHome ();
+                });
+
+
+                $('.box_container .box a').on('mouseenter', function () {
+                    TweenLite.to($(this).find('img'), 0.4, {opacity: 0.6});
+                }).on('mouseout', function () {
+                    TweenLite.to($(this).find('img'), 0.4, {opacity: 1});
+                });
+
+            });
+
+            function openPromoHome () {
+
+                open = 1;
+                if (!h) {
+                    h = $(".home_promo").outerHeight();
+                }
+                $(".home_promo").height(0);
+                $(".home_promo").show();
+
+                TweenLite.to($(".home_promo"), 1.5, {height: h, ease:Expo.easeOut, onComplete: function () {
+
+                    var heights = $(".p_height").map(function () {
+                        return $(this).height();
+                    }).get();
+                    var maxHeight = Math.max.apply(null, heights);
+
+                    $(".p_height").height(maxHeight);
+
+                    TweenLite.to($(".block_show"), 0.5, {opacity: 1});
+
+                    if (auto_open === 1) {
+                        setTimeout(function() {
+                            auto_open = 0;
+                            closePromoHome();
+                        }, 10000);
+                    }
+                }});
+            }
+
+            function closePromoHome () {
+                TweenLite.to($(".home_promo"), 1.5, {height: 0, ease:Expo.easeOut, onComplete: function () {
+                    $(".home_promo").hide();
+                    open = 0;
+                    // set cookie
+                    var num = readCookie('nat_promo_home_count');
+                    num ++;
+                    writeCookie("nat_promo_home_count", num, 6000);
+                }});
+            }
+
+        </script>
+
+
+		
+
+
+<div class="top">
+    <div class="menu_top clearfix">
+        <div class="L">
+            
+
+            
+                
+            
+        </div>
+        <div class="R">
+            
+            <a href="en-EN/select-country.html">Change Country <img src="img/b/arrow_dn_white.png" /></a>
+            
+                &nbsp;|&nbsp;
+			            
+            <a href="javascript:;" class="search_btn"><span class="search_word">Search</span> <img src="img/b/search_black.png" /></a>
+                <form class="form_search" action="http://int.Romilda.com/en-EN/search.html" method="post" style="float:right;">
+                    <input type="text" id="input_search" name="input_search" autocomplete="off" />
+                    <div class="result_search">
+                        <div class="search_with_img">
+                            <ul><!-- load via ajax --></ul>
+                        </div>
+                    </div>
+                </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.search_btn').on({
+                click: function () {
+                    $('.search_word').hide();
+                    $('#input_search').fadeIn();
+                }
+            });
+
+            $('#input_search').on({
+                blur: function () {
+                    if (!$(this).val()) {
+                        $('.search_word').show();
+                        $('#input_search').fadeOut();
+                    }
+                }
+            });
+        });
+
+    </script>
+
+    
+
+
+    
+
+
+    <div class="main_menu">
+
+        
+            <a href="index.html"><img src="img/logo.png" /></a>
+        
+
+        <ul>
+			<li><a href="en-EN/SHOP.html" id="mm_prods">SHOP</a></li>
+
+			<li><a href="index.html" id="mm_prods">HOME</a></li>
+			
+			<li><a href="javascript:;" onclick="openMenu('sub1');" id="mm_highlights">News&Media</a></li>
+
+
+            
+            
+                <li><a href="en-EN/open-art.html" id="mm_openart">Open Art</a></li>
+            
+
+                   
+                          
+            
+            <li class="last"><a href="en-EN/contact-us.html" id="mm_contacts">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="submenu clearfix">
+
+    <div class="sub sub1 txtC">
+        <div class="item50"><a href="en-EN/news.html"><img src="img/menu_news.jpg" alt="" width="100%" class="foto" /><br />News&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        <div class="item50"><a href="en-EN/media-videos.html"><img src="img/menu_media.jpg" alt="" width="100%" class="foto" /><br />Videos, ADV Campaigns, Catalogues&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+    </div>
+
+
+    <style>
+        .sub2 .d960 {
+            width: 550px;
+        }
+        .sub2 ul li {
+            background: none !important;
+            padding: 0 0 5px 0px !important;
+        }
+    </style>
+
+    
+
+
+    
+        <div class="sub sub4">
+        
+            <div class="item"><a href="https://www.tilelook.com/producers/ydbn/" target="_blank"><img src="cms/uploads/modified/bigs/ydbn-340x320-2.jpg" alt="cms/uploads/modified/bigs/ydbn-340x320-2.jpg" width="100%" class="foto" /><br />Your Design by Romilda&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/wedding-list-677.html" target="_self"><img src="cms/uploads/modified/bigs/wedding-list-340x320.jpg" alt="cms/uploads/modified/bigs/wedding-list-340x320.jpg" width="100%" class="foto" /><br />Wedding list&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/bespoke-payment-678.html" target="_self"><img src="cms/uploads/modified/bigs/bespoke-payment-340x320.jpg" alt="cms/uploads/modified/bigs/bespoke-payment-340x320.jpg" width="100%" class="foto" /><br />Bespoke payment&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/pick-up-and-delivery-679.html" target="_self"><img src="cms/uploads/modified/bigs/pick-up-340x320.jpg" alt="cms/uploads/modified/bigs/pick-up-340x320.jpg" width="100%" class="foto" /><br />Pick-up and delivery&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/the-Romilda-warranty-680.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda-warranty-340x320.jpg" alt="cms/uploads/modified/bigs/Romilda-warranty-340x320.jpg" width="100%" class="foto" /><br />The Romilda Warranty&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/care-and-maintenance-823.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda-cleaning-kit-4-823-447x320.jpg" alt="cms/uploads/modified/bigs/Romilda-cleaning-kit-4-823-447x320.jpg" width="100%" class="foto" /><br />Care and Maintenance&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/customized-service-682.html" target="_self"><img src="cms/uploads/modified/bigs/services-img-5943-340x320-4.jpg" alt="cms/uploads/modified/bigs/services-img-5943-340x320-4.jpg" width="100%" class="foto" /><br />Customized service&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+            <div class="item"><a href="en-EN/page/extra-protection-683.html" target="_self"><img src="cms/uploads/modified/bigs/extra-protection-340x320-13.jpg" alt="cms/uploads/modified/bigs/extra-protection-340x320-13.jpg" width="100%" class="foto" /><br />Extra protection&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+        </div>
+    
+
+    
+    <div class="sub sub5">
+        
+                  
+            <div class="item"><a href="en-EN/Divano.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda-Divano-340x320.jpg" alt="cms/uploads/modified/bigs/Romilda-Divano-340x320.jpg" width="100%" class="foto" /><br />Romilda Divano&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+           
+        
+            <div class="item"><a href="en-EN/page/coverings-and-quality-667.html" target="_self"><img src="cms/uploads/modified/bigs/sofa-coverings-leather-2-340x320.jpg" alt="cms/uploads/modified/bigs/sofa-coverings-leather-2-340x320.jpg" width="100%" class="foto" /><br />Coverings and Quality&nbsp;&nbsp;&nbsp;<img src="img/b/read_more_menu.png" /></a></div>
+        
+        </div>
+    
+
+    <a href="javascript:;" class="m_close" onclick="closeMenu()"><img src="img/b/close_menu.png" /></a>
+</div>
+
+
+</div>
+
+<div class="total_black"></div>
+<div class="clear"></div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('.main_menu a').on("click", function () {
+            $('.main_menu a').css("text-decoration", "none");
+            $(this).css("text-decoration", "underline");
+        });
+
+        $('.block_box .item a').on('mouseenter', function () {
+            TweenLite.to($(this).find('img'), 0.4, {opacity: 0.6});
+        }).on('mouseout', function () {
+            TweenLite.to($(this).find('img'), 0.4, {opacity: 1});
+        });
+
+    });
+
+    var menu_open = false;
+    var sub_menu_open = false;
+    function openMenu (item) {
+        // controlla se è gia aperto il menu
+        if (!menu_open) {
+            TweenMax.set($('.total_black,.submenu,.' + item), {display:'block'});
+            TweenMax.to($('.total_black'), 0.3, {opacity: 1});
+            TweenMax.to($('.submenu'), 1, {opacity: 1, delay: 0.3, ease:Expo.easeOut});
+
+            // sub menu
+            TweenMax.to($("." + item), 0.3, {opacity: 1, delay: 0.9});
+
+            sub_menu_open = item;
+        }
+        else if (sub_menu_open != item) {
+            TweenMax.to($("." + sub_menu_open), 0.3, {opacity: 0, onComplete: function () {
+                TweenMax.set($("." + sub_menu_open), {display:"none"});
+                    TweenMax.set($("." + item), {display:"block", opacity: 0});
+                    TweenMax.to($("." + item), 0.3, {opacity: 1});
+                    sub_menu_open = item;
+                }
+            });
+        } else {
+            closeMenu();
+        }
+
+        menu_open = true;
+
+       $(".total_black").on("mouseenter", closeMenu);
+    }
+
+    function closeMenu () {
+       TweenMax.to($('.sub'), 0.3, {opacity: 0});
+       TweenMax.to($('.submenu'), 1, {opacity:0, delay: 0.4, ease:Expo.easeOut});
+       TweenMax.to($('.total_black'), 0.4, {opacity: 0, delay: 0.4, onComplete: function()
+       {
+          TweenMax.set($('.total_black,.submenu, .sub'), {display:'none'});
+          menu_open = false;
+          sub_menu_open = false;
+       }});
+       $('.main_menu a').css("text-decoration", "none");
+    }
+
+
+    function openMenuLangs () {
+        TweenMax.set($('.menu_langs'), {display: 'block'});
+        TweenMax.to($('.menu_langs'), 1, {opacity: 1, delay: 0.3, ease:Expo.easeOut});
+
+        $(".menu_langs").on("mouseenter", function () {
+            $(".menu_langs").on("mouseleave", closeMenuLangs);
+        });
+    }
+
+    function closeMenuLangs () {
+        TweenMax.to($('.menu_langs'), 0.5, {opacity:0, ease:Expo.easeOut, onComplete: function () {
+            TweenMax.set($('.menu_langs'), {display: 'none'});
+        }});
+    }
+
+    function openMenuContacts () {
+
+        var pos = $(".open_menu_contact").position();
+        $('.menu_contacts').css("left", pos.left);
+
+        TweenMax.set($('.menu_contacts'), {display: 'block'});
+        TweenMax.to($('.menu_contacts'), 1, {opacity: 1, delay: 0.3, ease:Expo.easeOut});
+
+        $(".menu_contacts").on("mouseenter", function () {
+            $(".menu_contacts").on("mouseleave", closeMenuContacts);
+        });
+    }
+
+    function closeMenuContacts () {
+        TweenMax.to($('.menu_contacts'), 0.5, {opacity:0, ease:Expo.easeOut, onComplete: function () {
+            TweenMax.set($('.menu_contacts'), {display: 'none'});
+        }});
+    }
+
+</script>
+
+
+        <div class="page_wrap" style="padding: 0px;">
+
+        
+
+            <style type="text/css">
+            #bgvid{
+                width: 100%;
+                height: 100% !important;
+                z-index: 10 !important;
+            }
+            #bgvid2{
+                width: 100%;
+                height: 100% !important;
+                z-index: 10 !important;
+            }
+
+            .contenuti_home{
+                padding: 0;
+            }
+
+            .video_section{
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .mute-btn{
+                display: block;
+                position: absolute;
+                right: 30px;
+                top: 180px;
+                color: white;
+                padding:20px;
+                cursor: pointer;
+                z-index: 11;
+            }
+
+            .mute-btn img{
+                width: 30px;
+            }
+
+            .audio-on{
+                display: none;
+            }
+
+            </style>
+
+            <div class="bg_slide">
+                <div class="mute-btn muted" style="display: none;"><img class="audio-on" src="img/audio-on.png"/><img class="audio-off" src="img/audio-off.png"/></div>
+                <div id="bgvid"data-vide-bg="mp4: video.mp4, poster: img/newhome/long-beach.jpg" data-vide-options="posterType: jpg"></div>
+            </div>
+        
+        <script type="text/javascript" src="js/vendor/jquery.flip.js"></script>
+    <style type="text/css">
+
+        .cont_new_home {
+            width: 85%;
+            margin: auto;
+        }
+
+        .cont_new_home .head {
+            text-align: center;
+        }
+
+        .cont_new_home .head .title {
+            margin-top: 30px;
+            margin-bottom: 55px;
+            height: 75px;
+            background: url(img/b/row_new_home.png) repeat-x center center;
+        }
+        .cont_new_home .head h3 {;
+            display: inline-block;
+            background: #e5e1de;
+            padding: 0 80px;
+            font-size: 50px;
+            font-family: 'ProximaNovaThRegular';
+        }
+
+        .cont_new_home .cols {
+            width: 100%;
+            margin: 75px auto;
+            text-align: justify;
+        }
+
+        .cont_new_home .cols .left, .cont_new_home .cols .right {
+            width: 45%;
+            float: left;
+        }
+
+        .cont_new_home .cols .right {
+            float: right;
+        }
+
+
+    .social_new_home {
+        width: 98%;
+        padding: 1%;
+    }
+    .social_new_home .item {
+        width: 24%;
+        height: 300px;
+        margin: 0.5%;
+        display: inline-block;
+
+    }
+
+    .social_new_home .item_big {
+        width: 49%;
+        margin: 0.5%;
+        margin-bottom: 0;
+        float: left;
+        background: #FFF;
+    }
+
+    .social_new_home .item_big_video {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background: #000;
+        z-index: 99;
+        display: none;
+    }
+
+    .social_new_home .item_big_video .close_video {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 100;
+    }
+
+    .social_new_home .cardWrapper {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+
+    }
+    .social_new_home .cardWrapper .front, .social_new_home .cardWrapper .back {
+        background: #fff;
+        overflow: hidden;
+    }
+
+
+    .social_new_home .cardWrapper .front {
+        background: #FFF;
+    }
+
+    .social_new_home .cardWrapper .cont, .social_new_home .item_big .cont {
+        padding: 20px;
+        text-align: center;
+        font-family: 'ProximaNovaThRegular';
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .social_new_home .cardFace {
+         display: table;
+    }
+    .social_new_home .cardWrapper .cont_txt{
+
+        padding: 20px;
+        /*text-align: center;*/
+        font-family: 'ProximaNovaThRegular';
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .SHOP_new_home {
+        margin: 60px 0 -20px 0;
+        padding: 50px 0;
+    }
+
+    .SHOP_new_home, .SHOP_new_home .cont_new_home .head h3 {
+         background: #FFF;
+    }
+
+    .SHOP_new_home .collegamento_box3{/* float: left;*/ display: inline-block !important; vertical-align: top !important; float: none; width: 21%; margin-right: 1%; margin-left: 1%; text-align: left !important;}
+
+    .SHOP_new_home .collegamento_box3 .box_collegamento{height: 290px !important;}
+    .SHOP_new_home .collegamento_box3 .img_box {width: auto !important; height: 200px !important; border: none !important;}
+    .cont_new_home .collegamento_box2{display: inline-block !important; vertical-align: top !important; width: 465px; height: 535px; border-bottom: 1px solid #b7b4b2; margin-bottom: 50px; margin-right: 15px; margin-left: 15px; position: relative; text-align: left !important; float: none !important;}
+
+    .footer {
+        padding-top: 30px !important;
+    }
+
+    .span_macro_cat {background: #FFF !important;}
+
+    .social_new_home .cardWrapper .front .cont_txt {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .social_new_home .cardWrapper .back .cont_txt {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .arrow-scroll{
+        bottom: 0;
+        left: 50%;
+        display: none;
+    }
+
+
+    @media screen and (max-width: 1540px) {
+
+        .social_new_home .cardWrapper .front .cont_txt {
+            font-size: 30px;
+            line-height: 32px;
+        }
+
+        .social_new_home .cardWrapper .back .cont_txt {
+            font-size: 30px;
+            line-height: 32px;
+        }
+
+    }
+
+    @media screen and (max-width: 1320px) {
+
+        .social_new_home .cardWrapper .front .cont_txt {
+            font-size: 26px;
+            line-height: 28px;
+        }
+
+        .social_new_home .cardWrapper .back .cont_txt {
+            font-size: 26px;
+            line-height: 28px;
+        }
+    }
+
+    </style>
+
+            <div class="contenuti_home">
+
+            
+
+                <div class="cont_new_home">
+                    <div class="head">
+                        <div class="title">
+                            <h3>Romilda Divano</h3>
+                        </div>
+                        <img src="img/n_home.png" />
+                    </div>
+
+                    <div class="cols clearfix">
+                        <div style="text-align:center; font-size:35px; line-height:38px; font-family: 'ProximaNovaThRegular';">
+                            ROMILDA BLENDS DESIGN,<br>
+                            FUNCTIONS, MATERIALS AND<br>
+                            COLOURS TO CREATE <br>
+                            HARMONIOUS LIVING.<br><br>
+                            <img src="img/newhome/segnature-Romilda.png"/>
+                            <br /><br />
+                            <a href="en-EN/Divano-2.html" style="font-size: 25px"><!--Romilda Divano--> <img src="img/b/arrow-hp-Divano.png" style="margin-bottom: 5px;"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social_new_home">
+                    <div class="item_big">
+                        <a href="en-EN/Divano-2.html">
+                        <img src="img/newhome/social_video.jpg" width="100%" height="100%"/>
+                        </a>
+                    </div><!--
+
+
+--><div class="item">
+                        <div class="cardWrapper default">
+                            <a href="en-EN/Divano-2.html">
+                            <div class="card">
+                                <div class="cardFace front">
+                                    <img src="img/newhome/social-design.jpg" width="100%" />
+                                </div>
+                                <div class="cardFace back">
+                                    <div class="cont_txt">
+WE DESIGN<br>
+SPACES WHERE<br>
+EVERY DETAIL<br>
+IS IMPORTANT.</div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div><!--
+                    --><div class="item">
+                        <div class="cardWrapper default">
+                            <a href="en-EN/Divano-2.html">
+                            <div class="card">
+                                <div class="cardFace front">
+
+                                    <div class="cont_txt" style="">
+                                        WE CREATE<br>
+                                        QUALITY SPACES<br>
+                                        WHERE THE<br>
+                                        ONLY RULE<br>
+                                        IS HARMONY.</div>
+                                </div>
+                                <div class="cardFace back">
+                                    <img src="img/newhome/social-divano.jpg" width="100%" />
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div><!--
+                    --><div class="item">
+                        <div class="cardWrapper default">
+                            <a href="en-EN/Divano-2.html">
+                            <div class="card">
+                                <div class="cardFace front">
+                                        <img src="img/newhome/social-faraglioni.jpg" width="100%" />
+                                </div>
+                                <div class="cardFace back">
+                                    <div class="cont_txt">
+                                    PUGLIA,<br>
+                                    OUR MUSE<br>
+                                    AND OUR HOME.
+                                </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div><!--
+                    --><div class="item">
+                        <div class="cardWrapper default">
+                            <a href="en-EN/Divano-2.html">
+                            <div class="card">
+                                <div class="cardFace front">
+                                    <div class="cont_txt">
+                                    THE SEA,<br>
+                                    THE LIGHT.<br>
+                                    OLIVE TREES<br>
+                                    HUNDREDS OF<br>
+                                    YEARS OLD,<br>
+                                    SHEER CLIFFS<br>
+                                    HANGING OVER<br>
+                                    THE SEA, FIELDS<br>
+                                    AND VINEYARDS.
+                                    </div>
+                                </div>
+                                <div class="cardFace back">
+                                   <img src="img/newhome/social-bed.jpg" width="100%" />
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div><!--
+                    --><div class="item_big R">
+
+                    <a href="en-EN/Divano-2.html">
+                        <div id="bgvid2"
+                            data-vide-bg="mp4:https://player.vimeo.com/external/163660789.sd.mp4?s=4a0a10e4d7f44d62efe31b478929c6d785f8c3a5&profile_id=165, poster:img/newhome/don-giovanni.jpg"
+                            data-vide-options="posterType: jpg"
+                            ></div>
+                    </a>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <script type="text/javascript">
+
+                    $(document).ready(function () {
+                        resizeFlip();
+                        iniFlip();
+                    });
+
+
+                    $(window).resize(function () {
+                        resizeFlip();
+                        iniFlip();
+                    });
+
+                    function iniFlip() {
+                        $(".default").flip();
+                    }
+
+                    function resizeFlip() {
+                        var item = $(".social_new_home .item");
+                        var item_big = $(".social_new_home .item_big");
+                        var item_big_video = $(".social_new_home .item_big_video");
+                        var width = item.css('width');
+
+                        item.height(width);
+                        item_big.height(width);
+                        item_big_video.height(width);
+                    }
+                </script>
+
+            
+
+                <div class="cont_new_home txtC">
+                    <div class="head">
+                        <div class="title">
+                            <h3>LATEST NEWS</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cont_new_home txtC" style="width: 100%; height: 536px; overflow: hidden ">
+
+                     
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-italia-opens-a-new-store-in-paramus-1899.html" target="_self"><img src="cms/uploads/modified/bigs/-nik9265-465x360-2-6.jpg" alt="Romilda Italia Paramus" /><br />
+                                <h3>Romilda Italia opens a new store in Paramus</h3><p>The Paramus New Jersey Romilda Italia store is the first store opening in 2017 in the United States.</p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-italia-opens-a-new-store-in-paramus-1899.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/mario-bellini-and-Romilda-reunite-for-the--mario-bellini--italian-beauty--exhibition-1873.html" target="_self"><img src="cms/uploads/modified/bigs/highpoint-building-external-view-1-465x360-2-2.jpg" alt="Romilda High Point" /><br />
+                                <h3>Mario Bellini and Romilda reunite for the “Mario Bellini. Italian Beauty” exhibition</h3><p><p>The Romilda Americas building is among the most impressive works in the career of the Italian architect </p></p></a>
+                                <div class="readMore"><a href="en-EN/news/mario-bellini-and-Romilda-reunite-for-the--mario-bellini--italian-beauty--exhibition-1873.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-presents-intro-by-fabio-novembre-at-the-miami-design-week-1835.html" target="_self"><img src="cms/uploads/modified/bigs/-mg-1791-465x360-2.jpg" alt="" /><br />
+                                <h3>Romilda presents Intro by Fabio Novembre at the Miami Design Week</h3><p><p>Fabio Novembre transforms the Romilda Italia flagship store with a new set-up focused on the dialogue between the Romilda's iconic Re-vive armchair and the Intro installation</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-presents-intro-by-fabio-novembre-at-the-miami-design-week-1835.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-italia-precious-christmas--charming-gift-ideas-1784.html" target="_self"><img src="cms/uploads/modified/bigs/fototavolonatale2016-465x360-2-2.jpg" alt="" /><br />
+                                <h3>Romilda Italia Precious Christmas: charming gift ideas </h3><p>Romilda Italia presents a new Christmas line of furniture and accessories that will enthrall all lovers of Italian design</p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-italia-precious-christmas--charming-gift-ideas-1784.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-italia-opens-a-new-store-in-milan-and-launches-its-new-retail-concept-1750.html" target="_self"><img src="cms/uploads/modified/bigs/img-1979-web-30498394712-o-465x360-2.jpg" alt="Romilda Italia Scalo Milano" /><br />
+                                <h3>Romilda Italia opens a new store in Milan and launches its new retail concept </h3><p><p>The new store offers a renewed shopping experience and is located in Scalo Milano, the first City Style District for design, fashion and food in Milan</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-italia-opens-a-new-store-in-milan-and-launches-its-new-retail-concept-1750.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="#" target="_self"><img src="cms/uploads/modified/bigs/Romilda-italia---wd-store-465x360-2.jpg" alt="Romilda Italia Shanghai" /><br />
+                                <h3>Romilda throws an outstanding party for the new Romilda Italia store in Shanghai</h3><p><p>The Italian furniture house celebrates its 5<sup>th</sup> Romilda Italia point of sale in Shanghai with style</p></p></a>
+                                <div class="readMore"><a href="#" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/re-thinking-re-vive--Romilda-s-contribution-to-the-london-design-festival-2016-is-made-of-art-and-design-1660.html" target="_self"><img src="cms/uploads/modified/bigs/news-london-design-festival-465x360-2-2.jpg" alt="RE-THINKING RE-VIVE" /><br />
+                                <h3>RE-THINKING RE-VIVE: Romilda's contribution to the London Design Festival 2016 is made of art and design </h3><p><p>Romilda presents a special project that involves designers Eley Kishimoto, Patternity e Camille Walala in creating new interpretations of Romilda Re-vive, the iconic chair of the brand</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/re-thinking-re-vive--Romilda-s-contribution-to-the-london-design-festival-2016-is-made-of-art-and-design-1660.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-celebrates-the-excellence-of-made-in-italy-with-a-live-show-in-new-york-1653.html" target="_self"><img src="cms/uploads/modified/bigs/aldomati-e-pn-fb-sans-serif-465x360-2.jpg" alt="" /><br />
+                                <h3>Romilda celebrates the excellence of Made in Italy with a live show in New York</h3><p><p>One of the most talented Romilda crafstman shows the ancient art of “capitonnè” from the window of the Romilda Italia Flagship Store in New York</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-celebrates-the-excellence-of-made-in-italy-with-a-live-show-in-new-york-1653.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/feel--the--light--Romilda-sets-up-an-area-of-design-and-relaxation-at-the-alberobello-light-festival-1620.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda-alberobello-light-festival-465x360-2-2.jpg" alt="Romilda Alberobello Light Festival" /><br />
+                                <h3>FEEL [the] LIGHT: Romilda sets up an area of design and relaxation at the Alberobello Light Festival</h3><p><p>The Romilda Revive chairs are protagonist of a unique installation where design and lightness blend harmoniously with modern art and the beautiful scenery of the Trulli</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/feel--the--light--Romilda-sets-up-an-area-of-design-and-relaxation-at-the-alberobello-light-festival-1620.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-and-fabio-novembre-s--intro--become-part-of-a-special-volume-on-history-of-italian-design-1585.html" target="_self"><img src="cms/uploads/modified/bigs/copertina-catalogo-stanze-465x360-2.jpg" alt="" /><br />
+                                <h3>Romilda and Fabio Novembre's “Intro” become part of a special volume on history of Italian design </h3><p><p>The book celebrates a century of the history of Italian interiors seen through the work of its central figures such as Fabio Novembre and many more</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-and-fabio-novembre-s--intro--become-part-of-a-special-volume-on-history-of-italian-design-1585.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/n--the-first-issue-of-Romilda-s-monthly-e-newsletter-is-out-1553.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda-newsletter-465x360-2-2.png" alt="Romilda newsletter" /><br />
+                                <h3>N: the first issue of Romilda's monthly e-newsletter is out</h3><p>Sign up to N to receive Romilda e-newsletter each month: latest news and products, inspiration and interior design, straight from Italy's largest furniture house</p></a>
+                                <div class="readMore"><a href="en-EN/news/n--the-first-issue-of-Romilda-s-monthly-e-newsletter-is-out-1553.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-italia-and-convivio--fashion--design-and-music-to-fight-against-aids-1548.html" target="_self"><img src="cms/uploads/modified/bigs/camp--convivio-465x360-2.jpg" alt="" /><br />
+                                <h3>Romilda Italia and Convivio: fashion, design and music to fight against AIDS</h3><p><p>Romilda Italia participates in one of the most important and famous charity event in Italy</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-italia-and-convivio--fashion--design-and-music-to-fight-against-aids-1548.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-partners-with-nobel-prize-winner-betty-williams-to-help-refugees-1509.html" target="_self"><img src="cms/uploads/modified/bigs/citt---della-pace-465x360-2-2.jpg" alt="Pasquale Romilda Città della Pace" /><br />
+                                <h3>Romilda partners with Nobel Prize winner Betty Williams to help refugees</h3><p><p>Pasquale Romilda signs the agreement to build a shelter for refugees in southern Italy</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-partners-with-nobel-prize-winner-betty-williams-to-help-refugees-1509.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-italia-at-salone-del-mobile-2016--harmony-and-style-for-an-enriched-new-collection-1473.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda-italia-salone-del-mobile-2016-465x360-2-2.jpg" alt="Romilda Italia Salone del Mobile 2016" /><br />
+                                <h3>Romilda Italia at Salone del Mobile 2016: harmony and style for an enriched new collection</h3><p><p>Twenty new models and the enrichment of the Total Living offer thanks to the harmonious combination of design, function, materials and colors</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-italia-at-salone-del-mobile-2016--harmony-and-style-for-an-enriched-new-collection-1473.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-and-fabio-novembre-sign-one-of-the-rooms-within-the-exhibition--rooms--novel-living-concepts--of-triennale-in-milan-1439.html" target="_self"><img src="cms/uploads/modified/bigs/triennalenews3-465x360-2-2.jpg" alt="Romilda Fabio Novembre Triennale" /><br />
+                                <h3>Romilda and Fabio Novembre sign one of the rooms within the exhibition “Rooms. Novel Living concepts” of Triennale in Milan</h3><p>Romilda collaborates with famous Italian designer Fabio Novembre in his new project “Intro”. The installation, supported by Salone del Mobile, will be hosted in the Triennale in Milan from April 2<sup>nd</sup> to September 12<sup>th</sup> 2016</p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-and-fabio-novembre-sign-one-of-the-rooms-within-the-exhibition--rooms--novel-living-concepts--of-triennale-in-milan-1439.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-italia-at-salone-del-mobile-2016-1367.html" target="_self"><img src="cms/uploads/modified/bigs/campagna-per-anticipazioni-home-465x360-2-2.png" alt="" /><br />
+                                <h3>Romilda Italia at Salone del Mobile 2016</h3><p><p>A brand new collection, first-time partnerships and groundbreaking materials for the 55<sup>th</sup> edition of the world's most prestigious fair for design and the home furnishing system</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-italia-at-salone-del-mobile-2016-1367.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/the-magnificent-seven--Romilda-opens-a-new-store-in-florida-1335.html" target="_self"><img src="cms/uploads/modified/bigs/pinecrest-Romilda-465x360-2-2.jpg" alt="Pinecrest Romilda Italia" /><br />
+                                <h3>The magnificent seven: Romilda opens a new store in Florida</h3><p><p>Romilda opened its seventh Romilda Italia store in Pinecrest, the beautiful suburban village just outside Miami, Florida</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/the-magnificent-seven--Romilda-opens-a-new-store-in-florida-1335.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-italia-opens-its-first-store-in-philadelphia-1301.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda-italia-philadelphia-465x360-2-2.jpg" alt="Romilda Italia store Philadelphia" /><br />
+                                <h3>Romilda Italia opens its first store in Philadelphia</h3><p><p>The new point of sale is located on the eastern part of South Street, one of the most popular tourist attractions in Philadelphia</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-italia-opens-its-first-store-in-philadelphia-1301.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-opens-its-first-Romilda-revive-gallery-in-uruguay-1270.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda-revive-punta-del-este-465x360-2-2.jpg" alt="Romilda Revive Punta del Este" /><br />
+                                <h3>Romilda opens its first Romilda Revive gallery in Uruguay</h3><p>The first Romilda Revive point of sale opened in Punta del Este, one of the most desired tourist destination in Uruguay during summer</p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-opens-its-first-Romilda-revive-gallery-in-uruguay-1270.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/goodbye-joe-1263.html" target="_self"><img src="cms/uploads/modified/bigs/joe-mirabile-and-pasquale-junior-Romilda-465x360-2-2.jpg" alt="Joe Mirabile and Romilda" /><br />
+                                <h3>Goodbye Joe</h3><p>It broke our hearts to lose Joe Mirabile, one of the most brilliant and passionate partner in the history of Romilda Group</p></a>
+                                <div class="readMore"><a href="en-EN/news/goodbye-joe-1263.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-at-imm-cologne-2016-1237.html" target="_self"><img src="cms/uploads/modified/bigs/imm-logo-465x360-3.jpg" alt="Romilda at IMM Cologne 2016" /><br />
+                                <h3>Romilda at IMM Cologne 2016</h3><p><p>Romilda returns to Imm Cologne Fair, taking place from 18 to 24 January 2016. The appointment is at the Hall 6, stand B080 with the two Romilda product lines: Romilda Italia and Romilda Editions</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-at-imm-cologne-2016-1237.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="http://blog.Romilda.com/Romilda-christmas/" target="_self"><img src="cms/uploads/modified/bigs/Romildapreciouschristmas-465x360-2-2.jpg" alt="Romilda Precious Christmas" /><br />
+                                <h3>Romilda Precious Christmas: 10 exclusive gift ideas to decorate your house with style</h3><p><p>Romilda presents “Romilda Precious Christmas”, a unique selection of authentic Romilda Italia pieces of furniture. The trendiest items for 2016 are chosen from the Romilda Italia collection to become exclusive gift ideas for an unforgettable Christmas</p></p></a>
+                                <div class="readMore"><a href="http://blog.Romilda.com/Romilda-christmas/" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-revive-in-alberobello--design-and-innovation-become-timeless-1205.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda-revive-in-alberobello-465x360-3.jpg" alt="Romilda Revive Alberobello Light Festival 2015" /><br />
+                                <h3>Romilda Revive in Alberobello: design and innovation become timeless</h3><p><p>Design and innovation side by side with tradition in one of the most enchanting location in Apulia, the region that is part of the Romilda Divano </p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-revive-in-alberobello--design-and-innovation-become-timeless-1205.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/pasquale-Romilda-receives-the--italian-talent-award-2015-1174.html" target="_self"><img src="cms/uploads/modified/bigs/pasquale-Romilda--1--465x360.jpg" alt="Romilda Italian Talent Award 2015" /><br />
+                                <h3>Pasquale Romilda receives the “Italian Talent Award 2015”</h3><p><p>The prize was awarded to Pasquale Romilda “for representing the Italian excellence in the interior design industry, an example of creativity and innovation appreciated all over the world”</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/pasquale-Romilda-receives-the--italian-talent-award-2015-1174.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-open-art-arrives-in-usa-for-the-miami-art-week-1142.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda-open-art--ham-uh-k--01-photo-by--465x360.jpg" alt="Romilda Open Art - Miami" /><br />
+                                <h3>Romilda Open Art in USA for the Miami Art Week</h3><p>Romilda brought its Open Art project to the United States for the first time ever. Artist Adrien Missika unveiled its installation in the Romilda store in the Miami Design District on the occasion of the Miami Art Week</p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-open-art-arrives-in-usa-for-the-miami-art-week-1142.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-italia-represents-made-in-italy-during-art-basel-miami-1111.html" target="_self"><img src="cms/uploads/modified/bigs/p--rez-art-museum-miami-by-architects-he-465x360-2-2.jpg" alt="Romilda Open Art - Perez Art Museum Miami" /><br />
+                                <h3>Romilda Italia represented Made in Italy during Art Basel Miami</h3><p><p>Two Romilda iconic products were showcased as authentic artworks in the PAMM museum, in conjunction with Art Basel Miami, the prestigious cultural event that gathers masterpieces from across the globe.</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-italia-represents-made-in-italy-during-art-basel-miami-1111.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/harmony-maker---Romilda-italia-launches-the-new-communication-campaign-1049.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda-harmony-maker---long-beach-465x360-2-2.jpg" alt="Romilda Harmony Maker" /><br />
+                                <h3>“Harmony Maker”: Romilda Italia launches the new communication campaign</h3><p><p>Romilda Italia introduces “Harmony Maker”, the new communication campaign that tells the story behind Romilda's Divano. Harmony, the core concept of the brand, is recounted on the beautiful backdrop of homeland Apulia, the southern Italian region that inspires Romilda SHOP.</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/harmony-maker---Romilda-italia-launches-the-new-communication-campaign-1049.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-italia-grows-in-florida--naples-is-the-sixth-store-in-the-southern-state-1015.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda-italia-store-in-naples-florida-465x360-2-2.jpg" alt="Romilda Italia store Naples" /><br />
+                                <h3>Romilda Italia grows in Florida: Naples is the sixth store in the southern state</h3><p><p>Romilda Italia opened its sixth point of sales in Florida, one of the most fashionable and cosmopolitan state in the United States. The newest opening joins stores in Miami, Aventura, Ft. Lauderdale, Boca Raton and Orlando.</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-italia-grows-in-florida--naples-is-the-sixth-store-in-the-southern-state-1015.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-italia-opened-an-outstanding-store-in-hong-kong-957.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda---hong-kong-store-2-465x360-2-2.jpg" alt="Romilda Hong Kong store" /><br />
+                                <h3>Romilda Italia opened an outstanding store in Hong Kong</h3><p><p>The prestigious store location covers 10,400-sq.-ft. on one floor and is conveniently located inside the Horizon Plaza building, the house for cutting-edge furniture and fashion in Honk Kong. </p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-italia-opened-an-outstanding-store-in-hong-kong-957.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-revive--an-island-of-relaxation-in-the-heart-of-milan-716.html" target="_self"><img src="cms/uploads/modified/bigs/Romilda-revive-capsule-in-milan-465x360-2-2.jpg" alt="Romilda Revive capsule in Milan" /><br />
+                                <h3>Romilda Revive, an island of relaxation in the heart of Milan</h3><p>Romilda Italia furnishes Gae Aulenti Square, in the heart of the modern city of Milan, with the “Re-vive Capsule”, an island of design and well-being.</p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-revive--an-island-of-relaxation-in-the-heart-of-milan-716.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-italia-opens-in-colombo--sri-lanka-617.html" target="_self"><img src="cms/uploads/modified/bigs/cni-1-465x360-2-2.jpg" alt="Romilda Italia Colombo" /><br />
+                                <h3>Romilda Italia opens in Colombo, Sri Lanka </h3><p>The collection of furniture showcased in the Colombo store contains a range of luxury products for living room and day and night zones</p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-italia-opens-in-colombo--sri-lanka-617.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-revive-at-the--trulli---innovation-joins-tradition-585.html" target="_self"><img src="cms/uploads/modified/bigs/alf-Romildascalata-465x360.jpg" alt="Romilda Revive "Be-Disconnected" Alberobello Light Festival" /><br />
+                                <h3>Romilda Revive at the "Trulli": innovation joins tradition</h3><p>Romilda Re-Vive is part of an exclusive product placement in the timeless atmosphere of the “Trulli” in Alberobello, Puglia.</p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-revive-at-the--trulli---innovation-joins-tradition-585.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-furnishes-the-future-at-citylife-in-milan-584.html" target="_self"><img src="cms/uploads/modified/bigs/img-2708-web-465x360.jpg" alt="Romilda furnishes the Hadid attic in CityLife" /><br />
+                                <h3>Romilda furnishes the future at CityLife in Milan</h3><p><p>Romilda decorates one of the most beautiful attic in CityLife, the new residential, commercial and business district designed by famous architect Zaha Hadid in Milan.</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-furnishes-the-future-at-citylife-in-milan-584.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/Romilda-opens-its-first-indian-re-vive-pop-up-store-in-new-delhi-583.html" target="_self"><img src="cms/uploads/modified/bigs/emporio-465x360-2.jpg" alt="Romilda Revive at DLF Emporio in New Delhi" /><br />
+                                <h3>Romilda opens its first Indian Re-vive Pop-up store in New Delhi</h3><p><p>Romilda chooses <strong>New Delhi</strong> to open its first Indian store dedicated exclusively to Re-vive, the world's first performance recliner that reacts intuitively to the body movements.</p></p></a>
+                                <div class="readMore"><a href="en-EN/news/Romilda-opens-its-first-indian-re-vive-pop-up-store-in-new-delhi-583.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="en-EN/news/miami-and-dubai--Romilda-italia-opens-two-new-stores-581.html" target="_self"><img src="cms/uploads/modified/bigs/dubaifront2-465x360.jpg" alt="Romilda Italia new openings" /><br />
+                                <h3>Miami and Dubai: Romilda Italia opens two new stores</h3><p>Romilda Italia keeps broadening its sales network with two new openings in North America and Middle-East</p></a>
+                                <div class="readMore"><a href="en-EN/news/miami-and-dubai--Romilda-italia-opens-two-new-stores-581.html" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                            <div class="collegamento_box2 ">
+                                <a href="#" target="_self"><img src="cms/index.html" alt="" /><br />
+                                <h3>Romilda Italia Precious Christmas: charming gift ideas </h3><p>Romilda Italia presents a new Christmas line of furniture and accessories that will enthrall all lovers of Italian design</p></a>
+                                <div class="readMore"><a href="#" target="_self">Discover more <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                            </div>
+                        
+                    
+
+
+                </div>
+
+
+                <div class="SHOP_new_home">
+                    <div class="cont_new_home txtC">
+                        <div class="head">
+                            <div class="title">
+                                <h3>SHOP-ONLINE</h3>
+                            </div>
+                        </div>
+
+                         <div class="d960" style="width:920px;">
+
+                            
+<div class="categorie" style="margin-left: -45px; width: 100%;">
+	<div class="clearfix">
+		
+
+		
+			
+		
+			
+				<ul class="clearfix ul_macro_cat"id="umc1" data-id="1">
+				
+					<li><a href="en-EN/collection/sofas-121.html" ><img src="cms/uploads/modified/bigs/leather-sofa-80x40.png" alt="Leather sofa" /><br />Sofas</a></li>
+				
+					<li><a href="en-EN/collection/armchairs-122.html" ><img src="cms/uploads/modified/bigs/leather-armchairs-80x40.png" alt="Leather Armchairs mad in italy" /><br />Armchairs</a></li>
+				
+					<li><a href="en-EN/collection/sofa-beds-128.html" ><img src="cms/uploads/modified/bigs/leather-sofa-beds-80x40.png" alt="Leather sofa beds" /><br />Sofa beds</a></li>
+				
+					<li><a href="en-EN/collection/motion-129.html" ><img src="cms/uploads/modified/bigs/motion-relax-80x40.png" alt="Relax sofa with motion" /><br />Motion</a></li>
+				
+					<li><a href="en-EN/collection/re-vive-370.html" ><img src="cms/uploads/modified/bigs/motion-relax-revive-80x40-2.png" alt="Motion relax Revive Romilda" /><br />Re-vive</a></li>
+				
+					<li><a href="en-EN/collection/beds-400.html" ><img src="cms/uploads/modified/bigs/leather-beds-80x40-2.png" alt="Leather beds Romilda" /><br />Beds</a></li>
+				
+					<span class="span_macro_cat" id="smc1">SOFAS, ARMCHAIRS AND BEDS</span>
+				</ul>
+			
+		
+			
+				<ul class="clearfix ul_macro_cat"id="umc2" data-id="2">
+				
+					<li><a href="en-EN/collection/coffee-tables-123.html" ><img src="cms/uploads/modified/bigs/icona-tavoli-5-80x40-2.png" alt="" /><br />Coffee tables</a></li>
+				
+					<li><a href="en-EN/collection/lamps-124.html" ><img src="cms/uploads/modified/bigs/icona-lampade-6-80x40-2.png" alt="" /><br />Lamps</a></li>
+				
+					<li><a href="en-EN/collection/rugs-125.html" ><img src="cms/uploads/modified/bigs/icona-tappeti-7-80x40-2.png" alt="" /><br />Rugs</a></li>
+				
+					<li><a href="en-EN/collection/night---day-furniture-127.html" ><img src="cms/uploads/modified/bigs/icona-soggiorno-9-80x40-2.png" alt="" /><br />Night & day furniture</a></li>
+				
+					<li><a href="en-EN/collection/accessories-126.html" ><img src="cms/uploads/modified/bigs/icona-accessoir-8-80x40-2.png" alt="" /><br />Accessories</a></li>
+				
+					<span class="span_macro_cat" id="smc2">FURNITURE AND ACCESSORIES</span>
+				</ul>
+			
+		
+	</div>
+</div>
+
+<script>
+	$(document).ready(function ()
+	{
+		$(".ul_macro_cat").each(function (i, v)
+		{
+			var id = $(this).data("id");
+
+			var umc_w = $("#umc" + id).outerWidth();
+			var smc_w = $("#smc" + id).outerWidth();
+
+			$("#smc" + id).css("left", ((umc_w - smc_w) / 2));
+		});
+
+	});
+
+</script>
+
+
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+                    <div class="cont_new_home txtC" style="margin-top: 75px; width: 100%; height: 291px; overflow: hidden ">
+                        
+                            
+                                <div class="collegamento_box3 ">
+                                    <div class="box_collegamento">
+                                        <a href="en-EN/collection/sofas-121.html" target="_self"><div class="img_box" style="background: url(cms/uploads/modified/bigs/tempo-305x200.jpg) center center no-repeat; background-size: 100%">
+                                        </div></a>
+                                        <a href="en-EN/collection/sofas-121.html"><div class="testo_box"></div></a>
+                                        <div class="readMore"><a href="en-EN/collection/sofas-121.html" target="_self">Sofas <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                                    </div>
+                                </div>
+                            
+                                <div class="collegamento_box3 ">
+                                    <div class="box_collegamento">
+                                        <a href="en-EN/collection/re-vive-370.html" target="_self"><div class="img_box" style="background: url(cms/uploads/modified/bigs/re-vive-wingback-305x200.jpg) center center no-repeat; background-size: 100%">
+                                        </div></a>
+                                        <a href="en-EN/collection/re-vive-370.html"><div class="testo_box"></div></a>
+                                        <div class="readMore"><a href="en-EN/collection/re-vive-370.html" target="_self">Re-vive <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                                    </div>
+                                </div>
+                            
+                                <div class="collegamento_box3 last">
+                                    <div class="box_collegamento">
+                                        <a href="en-EN/collection/beds-400.html" target="_self"><div class="img_box" style="background: url(cms/uploads/modified/bigs/letto-piuma-305x200.jpg) center center no-repeat; background-size: 100%">
+                                        </div></a>
+                                        <a href="en-EN/collection/beds-400.html"><div class="testo_box"></div></a>
+                                        <div class="readMore"><a href="en-EN/collection/beds-400.html" target="_self">Beds <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                                    </div>
+                                </div>
+                            
+                                <div class="collegamento_box3 ">
+                                    <div class="box_collegamento">
+                                        <a href="en-EN/collection/night---day-furniture-127.html" target="_self"><div class="img_box" style="background: url(cms/uploads/modified/bigs/furniture-305x200.jpg) center center no-repeat; background-size: 100%">
+                                        </div></a>
+                                        <a href="en-EN/collection/night---day-furniture-127.html"><div class="testo_box"></div></a>
+                                        <div class="readMore"><a href="en-EN/collection/night---day-furniture-127.html" target="_self">Furniture <img src="img/b/read_more.png" align="absmiddle" /></a></div>
+                                    </div>
+                                </div>
+                            
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       <div class="footer">
+
+
+	
+		<div class="d960 clearfix1">
+			<div class="main_cont">
+				<span>	<h1>Site designed by <a href="https://ru-ru.Kate Suvorova.com/people/Kate-Suvorova/100006263880076">Kate Suvorova</a></h1><br /><br /></span>
+			</div>
+		</div>
+	
+</div>
+
+
+
+
+<script type="text/javascript">
+   ;
+</script>
+
+
+    <script type="text/javascript">
+
+
+    </script>
+
+
+     <style>
+        .totalblack_vote {position: fixed; top: 0; bottom: 0; width: 100%; background: rgba(0,0,0,0.8); z-index: 9997; display: none}
+        .popup_vote {padding: 20px; background: #fff; position: absolute; top: 50%; left: 50%; margin-left:-332px; margin-top: -233px; z-index: 9998; display: none}
+        .close_vote {position: absolute; top: 10px; right: 10px; z-index: 9999}
+    </style>
+
+    <div class="totalblack_vote"></div>
+    <div class="popup_vote">
+        <a href="http://www.businessawardseurope.com/vote/detail/ italy/11472" onClick="trackEvent('homepage', 'vote-Romilda', 'vote-Romilda')" class="link_vote" target="_blank">
+        <img src="../www.Romilda.com/id/vote_Romilda/vote_Romilda.jpg" /></a>
+        <a href="javascript:;" class="close_vote" onClick="closeVotePop();"><img src="../www.Romilda.com/id/vote_Romilda/close.png" /></a>
+    </div>
+
+                   
+
+    <script>
+        $(document).ready(function () {
+            //openVotePop();
+            // close popup after 10seconds
+           setTimeout(closeVotePop, 10000);
+
+
+           if ($(".bg_slide video").length > 0)
+           {
+                resizeVideo();
+                $(window).resize(function () {
+                    resizeVideo();
+                });
+
+                if ($(window).width() > 1024){
+                    $(".mute-btn").show();
+                }
+                else
+                {
+                    $('#bgvid>div').css({backgroundPosition: '50% 100%'});
+                }
+
+                $(".mute-btn").click(function(){
+                    jqVideoElement = $(this).parent().find("video");
+                    var muted = jqVideoElement[0].muted;
+                    jqVideoElement.prop("muted", !muted);
+
+                    if (muted == true)
+                    {
+                        $(this).find(".audio-off").hide();
+                        $(this).find(".audio-on").show();
+                    }
+                    else
+                    {
+                        $(this).find(".audio-off").show();
+                        $(this).find(".audio-on").hide();
+                    }
+
+                    return;
+                });
+
+                $(".bg_slide video").click(function(){
+                    var videoElement = $(this)[0];
+                    if (videoElement.paused)
+                    {
+                        videoElement.play();
+                    }
+                    else
+                    {
+                        videoElement.pause();
+                    }
+                })
+           }
+
+        });
+
+
+        function resizeVideo(){
+            var videoAreaHeight = $(window).outerHeight() - 180;
+            if ($("#bgvid").length > 0)
+            {
+                $(".bg_slide").height(videoAreaHeight);
+                $("#bgvid").height(videoAreaHeight);
+            }
+        }
+
+        $(window).resize(function () {
+            resizeVideo();
+        });
+
+        $(window).load(function () {
+
+            setTimeout(function() {
+                openNewsletter();
+            }, 5000);
+
+        });
+
+
+        function openVotePop() {
+            if (readCookie('vote') != 'ok') {
+                $(".totalblack_vote").show();
+                $(".popup_vote").show();
+            }
+
+            $("a.link_vote").click(function(e) {
+                e.preventDefault();
+                closeVotePop();
+                window.open(this.href);
+            });
+        }
+
+        function closeVotePop() {
+            // write cookie
+            writeCookie("vote", "ok", 6000);
+            $(".totalblack_vote").fadeOut();
+            $(".popup_vote").fadeOut();
+        }
+
+        function writeCookie(nameCookie,valueCookie,expireCookie) {
+            var deadline = new Date();
+            var now = new Date();
+            deadline.setTime(now.getTime() + (parseInt(expireCookie) * 600000));
+            document.cookie = nameCookie + '=' + escape(valueCookie) + '; expires=' + deadline.toGMTString() + '; path=/';
+        }
+
+        function readCookie(nameCookie) {
+            if (document.cookie.length > 0) {
+                var start = document.cookie.indexOf(nameCookie + "=");
+                if (start != -1) {
+                    start = start + nameCookie.length + 1;
+                    var end = document.cookie.indexOf(";",start);
+                    if (end == -1) end = document.cookie.length;
+                        return unescape(document.cookie.substring(start,end));
+                }
+                else {
+                    return "";
+                }
+            }
+            return "";
+        }
+    </script>
+
+
+
+
+   </body>
+
+<!--   from int.Romilda.com/  /3.x , Sun, 19 Feb 2017 06:00:52 GMT -->
+</html>
